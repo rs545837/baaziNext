@@ -62,7 +62,7 @@ export default async function Page({searchParams}: Props) {
         <h1 className="text-4xl font-extrabold tracking-normal">{siteConfig.name}</h1>
         <p className="mx-auto mt-4 max-w-3xl text-base">{siteConfig.description}</p>
       </div>
-      <div className="text-4xl font-extrabold tracking-normal text-center">Hello {user?.firstName}</div>
+      <div className="text-center text-4xl font-extrabold tracking-normal">Hello {user?.firstName}</div>
       <div>
         <main className="mx-auto max-w-6xl px-6">
           <div className="flex items-center justify-between border-b border-gray-200 pb-4 pt-24 dark:border-gray-800">

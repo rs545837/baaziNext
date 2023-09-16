@@ -13,10 +13,10 @@ export const LandingHero = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <div className="text-white font-bold py-36 text-center space-y-5">
-      <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
+    <div className="space-y-5 py-36 text-center font-bold text-white">
+      <div className="space-y-5 text-4xl font-extrabold sm:text-5xl md:text-6xl lg:text-7xl">
         <h1>The Best DFS Platform</h1>
-        <div className="text-transparent bg-clip-text bg-gradient-to-r bg-red-600">
+        <div className="bg-red-600 bg-gradient-to-r bg-clip-text text-transparent">
           <TypewriterComponent
             options={{
               strings: [
@@ -31,17 +31,17 @@ export const LandingHero = () => {
           />
         </div>
       </div>
-      <div className="text-sm md:text-xl font-light text-zinc-400">
+      <div className="text-sm font-light text-zinc-400 md:text-xl">
         MAKE A STORY. TAKE A CHANCE. JOIN AND WIN
       </div>
       <div>
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <Button variant="best" className="md:text-lg p-4 md:p-6 rounded-full font-semibold">
+          <Button variant="best" className="rounded-full p-4 font-semibold md:p-6 md:text-lg">
             Get Started
           </Button>
         </Link>
       </div>
-      <div className="text-zinc-400 text-xs md:text-sm font-normal">
+      <div className="text-xs font-normal text-zinc-400 md:text-sm">
         PICK, WIN. IT'S THAT SIMPLE.    
       </div>
     </div>
