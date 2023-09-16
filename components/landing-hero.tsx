@@ -42,7 +42,7 @@ export const LandingHero = () => {
         </Link>
       </div>
       <div className="text-xs font-normal text-zinc-400 md:text-sm">
-        PICK, WIN. IT'S THAT SIMPLE.    
+        PICK, WIN. IT`&apos;`S THAT SIMPLE.    
       </div>
     </div>
   );
