@@ -13,8 +13,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/components/ui/use-toast"
 import { CartItemsEmpty } from "@/components/cart-items-empty"
+import { currentUser, auth } from "@clerk/nextjs"
 
 export function CartItems() {
+  // const user = currentUser()
 
   const {cartDetails, removeItem, setItemQuantity} = useShoppingCart()
   const cartItems = Object.entries(cartDetails!).map(([_, product]) => product)

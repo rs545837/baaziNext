@@ -3,17 +3,19 @@
 import { Montserrat } from "next/font/google";
 import Image from "next/image"
 import Link from "next/link"
-import { useAuth } from "@clerk/nextjs";
+import { auth, useAuth } from "@clerk/nextjs";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Oswald } from "next/font/google";
-import { currentUser } from "@clerk/nextjs";
+import { currentUser} from "@clerk/nextjs";
 
 const font = Oswald({ weight: '600', subsets: ['latin'] });
 
 export const LandingNavbar = () => {
+  
   const { isSignedIn } = useAuth();
+  
 
   return (
     <nav className="flex items-center justify-between bg-transparent p-4">
@@ -31,7 +33,7 @@ export const LandingNavbar = () => {
             <p className={cn("text-xl font-bold text-white", font.className)}>FAQs</p>
           </Button>
         </Link>
-        <Link href={isSignedIn ? "/dashboard/" : "/sign-up"}>
+        <Link href={isSignedIn ? `/dashboard/` : "/sign-up"}>
           <Button variant="outline" className="rounded-full">
             <p className={cn("text-xl font-bold text-white", font.className)}>Get Started</p>
           </Button>
