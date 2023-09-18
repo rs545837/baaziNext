@@ -9,25 +9,25 @@ const testimonials = [
   {
     name: "STEP 1",
     avatar: "J",
-    title: "",
+    title: "STEP 1",
     description: "Choose Three or More Players",
   },
   {
     name: "STEP 2",
     avatar: "A",
-    title: "",
+    title: "STEP 2",
     description: "Pick MORE or LESS on their projected stats",
   },
   {
     name: "STEP 3",
     avatar: "M",
-    title: "",
+    title: "STEP 3",
     description: "Expore our inplay options for more fun, which are going to be released soon.",
   },
   {
     name: "STEP 4",
     avatar: "M",
-    title: "",
+    title: "STEP 4",
     description: "Wait for the game to end and see if you won!",
   },
 ];
