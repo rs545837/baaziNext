@@ -28,7 +28,7 @@ export default async function RootLayout({
     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <html lang="en" suppressHydrationWarning>
         <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-8WWSXJRK1T'/>
-        <Script id='google-analytics' strategy='afeterInteractive'>
+        <Script id='google-analytics' strategy='afterInteractive'>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
