@@ -7,35 +7,35 @@ const font = Oswald({ weight: '600', subsets: ['latin'] });
 
 const testimonials = [
   {
-    name: "Joel",
+    name: "STEP 1",
     avatar: "J",
-    title: "Software Engineer",
-    description: "This is the best application I've ever used!",
+    title: "",
+    description: "Choose Three or More Players",
   },
   {
-    name: "Antonio",
+    name: "STEP 2",
     avatar: "A",
-    title: "Designer",
-    description: "I use this daily for generating new photos!",
+    title: "",
+    description: "Pick MORE or LESS on their projected stats",
   },
   {
-    name: "Mark",
+    name: "STEP 3",
     avatar: "M",
-    title: "CEO",
-    description: "This app has changed my life, cannot imagine working without it!",
+    title: "",
+    description: "Expore our inplay options for more fun, which are going to be released soon.",
   },
   {
-    name: "Mary",
+    name: "STEP 4",
     avatar: "M",
-    title: "CFO",
-    description: "The best in class, definitely worth the premium subscription!",
+    title: "",
+    description: "Wait for the game to end and see if you won!",
   },
 ];
 
 export const LandingContent = () => {
   return (
     <div className="px-10 pb-20">
-      <h2 className="mb-10 text-center text-4xl font-extrabold text-white">Testimonials</h2>
+      <h2 className="mb-10 text-center text-4xl font-extrabold text-white">HOW TO PLAY</h2>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {testimonials.map((item) => (
           <Card key={item.description} className="border-none bg-[#192339] text-white">
