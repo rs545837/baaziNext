@@ -10,6 +10,7 @@ import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
 import { seedSanityData } from "@/lib/seed"
 import { currentUser } from "@clerk/nextjs"
+import { AlertDialogDemo } from "@/app/HowToPlay/page"
 
 
 
@@ -63,6 +64,7 @@ export default async function Page({searchParams}: Props) {
         <p className="mx-auto mt-4 max-w-3xl text-base">{siteConfig.description}</p>
       </div>
       <div className="text-center text-4xl font-extrabold tracking-normal">Hello {user?.firstName}</div>
+      <div className="flex justify-center mt-7"><AlertDialogDemo/></div>
       <div>
         <main className="mx-auto max-w-6xl px-6">
           <div className="flex items-center justify-between border-b border-gray-200 pb-4 pt-24 dark:border-gray-800">
