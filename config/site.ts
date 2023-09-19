@@ -6,9 +6,9 @@ export const siteConfig = {
   footer: [
     { name: "Home", href: "/" },
     { name: "About", href: "/" },
-    { name: "Terms & Conditions", href: "/TermsAndCond" },
+    { name: "Terms & Conditions", href: "/TermsAndConditions" },
     { name: "Contact Us", href: "/contact-us" },
-    { name: "Privacy Policy", href: "#" },
+    { name: "Privacy Policy", href: "/PrivacyPolicy" },
     { name: "FAQ", href: "/faq" },
   ],
 }
