@@ -119,7 +119,7 @@ const TermsAndConditions = () => {
       <section className="mb-4">
         <h2 className="text-xl font-semibold">10. Disclaimer of Warranties</h2>
         <p>
-          10.1 The Platform is provided on an "as is" and "as available" basis.
+          10.1 The Platform is provided on an &quot;as is&quot; and &quot;as available&quot; basis.
           Baazi makes no warranties regarding the accuracy, completeness, or
           reliability of the content on the Platform.
         </p>
