@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
       <section className="mb-4">
         <h2 className="text-xl font-semibold mt-4">1. Introduction</h2>
         <p>
-          Welcome to Baazi ("we," "us," "our," or "Baazi"). At Baazi, we are dedicated to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, utilize, disclose, and safeguard your personal information when you use our DFS platform, website, mobile applications, products, and services (collectively, the "Services").
+          Welcome to Baazi (&quot;we,&quot; &quot;us,&quot; &quot;our,&quot; or &quot;Baazi&quot;). At Baazi, we are dedicated to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, utilize, disclose, and safeguard your personal information when you use our DFS platform, website, mobile applications, products, and services (collectively, the "Services").
         </p>
         <p>
           By accessing or utilizing our Services, you consent to the practices described in this Privacy Policy. If you do not agree with our practices, please refrain from using our Services.
