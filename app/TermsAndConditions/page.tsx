@@ -53,7 +53,7 @@ Effective Date: Septemeber 19, 2023
 
 10. Disclaimer of Warranties
 
-10.1 The Platform is provided on an "as is" and "as available" basis. Baazi makes no warranties regarding the accuracy, completeness, or reliability of the content on the Platform.
+10.1 The Platform is provided on an &quot;as is&quot; and &quot;as available&quot; basis. Baazi makes no warranties regarding the accuracy, completeness, or reliability of the content on the Platform.
 
 11. Limitation of Liability
 
