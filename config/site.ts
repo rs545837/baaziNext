@@ -5,10 +5,10 @@ export const siteConfig = {
   description: "Choose and play with your favourite players!",
   footer: [
     { name: "Home", href: "/" },
-    { name: "About", href: "#" },
+    { name: "About", href: "/" },
     { name: "Terms & Conditions", href: "#" },
-    { name: "Return Policy", href: "#" },
+    { name: "Contact Us", href: "/contact-us" },
     { name: "Privacy Policy", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "FAQ", href: "/faq" },
   ],
 }

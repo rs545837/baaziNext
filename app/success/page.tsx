@@ -27,7 +27,7 @@ export default async function Page({searchParams}: Props) {
           >
             Go back home
           </Link>
-          <a href="#" className="text-sm font-semibold">
+          <a href="/contact-us" className="text-sm font-semibold">
             Contact support <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
