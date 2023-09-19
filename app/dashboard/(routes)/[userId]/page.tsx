@@ -11,10 +11,17 @@ import { ProductSort } from "@/components/product-sort"
 import { seedSanityData } from "@/lib/seed"
 import { currentUser } from "@clerk/nextjs"
 import { AlertDialogDemo } from "@/app/HowToPlay/page"
+import { useRouter } from "next/navigation"
+import  Layout  from "@/app/dashboard/layout"
+import { SiteHeader } from "@/components/site-header"
+
 
 
 
 interface Props {
+  params: {userId: string, users: string
+  }
+
   searchParams: {
     date?: string
     price?: string
@@ -25,10 +32,12 @@ interface Props {
   }
 }
 
-export default async function Page({searchParams}: Props) {
+
+export default async function Page({ searchParams, params }: Props) {
   const user = await currentUser()
-  
-  
+  const users = params.users
+  const userId = params.userId
+
 
   const {date = "desc", price, color, category, size, search} = searchParams
   const priceOrder = price ? `| order(price ${price})` : ""
@@ -57,6 +66,9 @@ export default async function Page({searchParams}: Props) {
   )
   console.log(products)
   return (
+<>
+
+     
 
     <div>
       <div className="px-4 pt-20 text-center">
@@ -90,6 +102,8 @@ export default async function Page({searchParams}: Props) {
         </main>
       </div>
     </div>
-   
+    {/* <Layout userId = {userId} /> */}
+
+   </>
   )
 }

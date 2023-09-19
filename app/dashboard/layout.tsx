@@ -9,7 +9,7 @@ import { SiteBlob } from "@/components/site-blob"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs/app-beta"
-import { SignInButton } from "@clerk/nextjs"
+import { SignInButton, useAuth } from "@clerk/nextjs"
 import { currentUser } from "@clerk/nextjs"
 
 
@@ -19,8 +19,11 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default async function RootLayout({ children }: RootLayoutProps) {
+
+export default async function RootLayout({children }: RootLayoutProps) {
   const user = await currentUser()
+
+
   return (
     <>
      {/* <ClerkProvider> */}
@@ -38,7 +41,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           <SignedIn>
           <Providers>
           <div className="relative flex min-h-screen flex-col">
-            <SiteHeader />
+            <SiteHeader   />
             <SiteBlob />
             <div className="flex-1">{children}</div>
             <SiteFooter />
