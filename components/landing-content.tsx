@@ -38,7 +38,7 @@ export const LandingContent = () => {
       <h2 className="mb-10 text-center text-4xl font-extrabold text-white">HOW TO PLAY</h2>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {testimonials.map((item) => (
-          <Card key={item.description} className="border-none bg-[#192339] text-white">
+          <Card key={item.description} className="border-none bg-[#1b1c1c] text-white">
             <CardHeader>
               <CardTitle className="flex items-center gap-x-2">
                 <div>

@@ -10,7 +10,7 @@ import { Oswald } from "next/font/google";
 const font = Oswald({ weight: '600', subsets: ['latin'] });
 
 export const LandingHero = () => {
-  const { isSignedIn, sessionId	 } = useAuth();
+  const { isSignedIn, userId	 } = useAuth();
 
   return (
     <div className="space-y-5 py-36 text-center font-bold text-white">
@@ -35,7 +35,7 @@ export const LandingHero = () => {
         MAKE A STORY. TAKE A CHANCE. JOIN AND WIN
       </div>
       <div>
-        <Link href={isSignedIn ? `/dashboard/${sessionId}` : "/sign-up"}>
+        <Link href={isSignedIn ? `/dashboard/${userId}` : "/sign-up"}>
           <Button variant="best" className="rounded-full p-4 font-semibold md:p-6 md:text-lg">
             Get Started
           </Button>
