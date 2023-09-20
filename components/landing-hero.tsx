@@ -6,11 +6,15 @@ import { useAuth } from "@clerk/nextjs";
 
 import { Button } from "@/components/ui/button";
 import { Oswald } from "next/font/google";
+import { useUser } from "@clerk/nextjs";
 
 const font = Oswald({ weight: '600', subsets: ['latin'] });
 
 export const LandingHero = () => {
-  const { isSignedIn, userId	 } = useAuth();
+  const { isLoaded, isSignedIn, user } = useUser();
+
+
+ 
 
   return (
     <div className="space-y-5 py-36 text-center font-bold text-white">
@@ -35,7 +39,7 @@ export const LandingHero = () => {
         MAKE A STORY. TAKE A CHANCE. JOIN AND WIN
       </div>
       <div>
-        <Link href={isSignedIn ? `/dashboard/${userId}` : "/sign-up"}>
+        <Link href={isSignedIn ? `/dashboard` : "/sign-up"}>
           <Button variant="best" className="rounded-full p-4 font-semibold md:p-6 md:text-lg">
             Get Started
           </Button>
