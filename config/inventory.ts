@@ -188,22 +188,135 @@ export const inventory: InventoryProduct[] = [
     colors: ["blue", "India"],
     currency: "INR",
   },
-  // {
-  //   id: "e33d47ba-b584-4a5c-afb8-9274b52a9274",
-  //   sku: "carlos_sainz",
-  //   name: "Carlos Sainz",
-  //   description: `carlos-sainz`,
-  //   price: 10000,
-  //   image:
-  //     "",
-  //   images: [
-  //     "",
-  //   ],
-  //   sizes: ["s", "l"],
-  //   categories: [],
-  //   colors: [],
-  //   currency: "INR",
-  // },
+  {
+    id: "e33d47ba-b584-4a5c-afb8-9274b52a9274",
+    sku: "carlos_sainz",
+    name: "Carlos Sainz",
+    description: `carlos-sainz`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "f847fab9-b3d9-4df1-a0bf-d8acc2a8b443",
+    sku: "pierre_gasly",
+    name: "Pierre Gasly",
+    description: `pierre_gasly`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "f847fab9-b3d9-4df1-a0bf-d8acc2a8b443",
+    sku: "alexander_albon",
+    name: "Alexander Albon",
+    description: `alexander_albon`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "1281939d-784f-4386-b822-f534045b7fea",
+    sku: "oscar_piastri",
+    name: "Oscar Piastri",
+    description: `oscar_piastri`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "1281939d-784f-4386-b822-f534045b7fea",
+    sku: "oscar_piastri",
+    name: "Oscar Piastri",
+    description: `oscar_piastri`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "a8ad93ae-159d-4fca-8501-2f0aff18e80b",
+    sku: "george_russell",
+    name: "George Russell",
+    description: `george_russell`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "ac984a28-1122-4704-8121-1da5fc3c870c",
+    sku: "lewis_hamilton",
+    name: "Lewis Hamilton",
+    description: `lewis_hamilton`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+  {
+    id: "ac984a28-1122-4704-8121-1da5fc3c870c",
+    sku: "lando_norris",
+    name: "Lando Norris",
+    description: `lando_norris`,
+    price: 10000,
+    image:
+      "",
+    images: [
+      "",
+    ],
+    sizes: ["s", "l"],
+    categories: [],
+    colors: [],
+    currency: "INR",
+  },
+
   
 
   
