@@ -12,6 +12,17 @@ export function CartSummary() {
   const isDisabled = isLoading || cartCount! === 0
   const shippingAmount = cartCount! > 0 ? 500 : 0
   const totalAmount = totalPrice! + shippingAmount
+   // Calculate predicted winning based on the number of picks
+   let predictedWinning = 0;
+   if (cartCount! === 2) {
+     predictedWinning = totalPrice! * 3 + shippingAmount;
+   } else if (cartCount! === 3) {
+     predictedWinning = totalPrice! * 5 + shippingAmount;
+   } else if (cartCount! === 4) {
+     predictedWinning = totalPrice! * 12 + shippingAmount;
+   } else if (cartCount! === 5) {
+     predictedWinning = totalPrice! * 20 + shippingAmount;
+   }
 
 
 
@@ -51,6 +62,8 @@ export function CartSummary() {
         <div className="flex items-center justify-between border-t border-gray-200 pt-4 dark:border-gray-600">
           <dt className="text-base font-medium">Order total</dt>
           <dd className="text-base font-medium">{formatCurrencyString({value: totalAmount, currency: "INR"})}</dd>
+          <dt className="text-base font-medium">You can Win</dt>
+          <dd className="text-base font-medium">{formatCurrencyString({value: predictedWinning, currency: "INR"})}</dd>
         </div>
       </dl>
 
