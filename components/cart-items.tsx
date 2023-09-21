@@ -75,16 +75,17 @@ export function CartItems() {
                 <label htmlFor={`quantity-${productIdx}`} className="sr-only">
                   Quantity, {product.name}
                 </label>
-                <Input
+                {/* This is the number input for a player*/}
+                {/* <Input
                   id={`quantity-${productIdx}`}
                   name={`quantity-${productIdx}`}
                   type="number"
                   className="w-16"
                   min={1}
-                  max={10}
+                  max={4}
                   value={product.quantity}
                   onChange = {event => setItemQuantity(product._id, Number(event.target.value))}
-                />
+                /> */}
                 <div className="absolute right-0 top-0">
                   <Button
                     variant="ghost"

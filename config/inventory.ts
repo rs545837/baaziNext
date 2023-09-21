@@ -188,6 +188,22 @@ export const inventory: InventoryProduct[] = [
     colors: ["blue", "India"],
     currency: "INR",
   },
+  // {
+  //   id: "e33d47ba-b584-4a5c-afb8-9274b52a9274",
+  //   sku: "carlos_sainz",
+  //   name: "Carlos Sainz",
+  //   description: `carlos-sainz`,
+  //   price: 10000,
+  //   image:
+  //     "",
+  //   images: [
+  //     "",
+  //   ],
+  //   sizes: ["s", "l"],
+  //   categories: [],
+  //   colors: [],
+  //   currency: "INR",
+  // },
   
 
   
