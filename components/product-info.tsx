@@ -47,14 +47,18 @@ export function ProductInfo({product}: Props) {
     <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
       <h1 className="text-3xl font-bold tracking-tight">{product.name}</h1>
 
-      <div className="mt-3">
+      <div className="mt-4">
         <h2 className="sr-only">Product information</h2>
         <p className="text-3xl tracking-tight">{formatCurrencyString({value: product.price, currency: product.currency})}</p>
+        <p className="text-3xl tracking-tight">{product.rating}</p>
+        
       </div>
+      
 
       <div className="mt-6">
         <h3 className="sr-only">Description</h3>
         <div className="space-y-6 text-base">{product.description}</div>
+        {/* <p className="text-3xl tracking-tight">{product.rating}</p> */}
       </div>
 
       <div className="mt-4">

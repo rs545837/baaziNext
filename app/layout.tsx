@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter, Oswald } from 'next/font/google'
-import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider, clerkClient } from '@clerk/nextjs'
 import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
+import { useAuth } from "@clerk/nextjs";
+import { SessionProvider } from 'next-auth/react'
 
 
 import './globals.css'
@@ -24,8 +26,10 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+    
+    <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-8WWSXJRK1T'/>
         <Script id='google-analytics' strategy='afterInteractive'>
@@ -42,5 +46,6 @@ export default async function RootLayout({
         </body>
       </html>
     </ClerkProvider>
+    
   )
 }

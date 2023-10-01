@@ -12,6 +12,7 @@ interface InventoryProduct {
   currency: string
   description: string
   sku: string
+  rating: number
 }
 
 export interface SanityProduct extends Omit<InventoryProduct, "images"> {
@@ -39,6 +40,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["bags"],
     colors: ["brown"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "8d1a33a5-5650-4bd7-bb70-ba4670090700",
@@ -57,6 +59,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["bags"],
     colors: ["blue"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "e882fe48-253c-40fb-8155-51b47b063c1a",
@@ -73,6 +76,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["belts"],
     colors: ["brown"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "6853a582-fc95-44af-9dac-dffbc694b47d",
@@ -89,6 +93,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["belts"],
     colors: ["black"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "b5980fb9-142b-4e0b-9683-daac07827e0a",
@@ -106,6 +111,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["scarves"],
     colors: ["green"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "743b3855-6487-4d52-80fc-bcb8ca4fa74b",
@@ -122,6 +128,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["gloves"],
     colors: ["brown"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "83ea928a-d834-4c6d-a588-4c93ec2de3c0",
@@ -138,6 +145,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["gloves"],
     colors: ["black"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "c5ef468d-d49e-4aa5-be5b-41f34af40b19",
@@ -155,6 +163,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["sunglasses"],
     colors: ["yellow"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "95759c0c-4fd7-416d-b8c5-b529c2d9028e",
@@ -171,6 +180,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["sunglasses"],
     colors: ["black"],
     currency: "USD",
+    rating: 1
   },
   {
     id: "36f05c3b-ec6a-4185-98dc-4bc94b72b348",
@@ -187,6 +197,7 @@ export const inventory: InventoryProduct[] = [
     categories: ["in", "Blue"],
     colors: ["blue", "India"],
     currency: "INR",
+    rating: 1
   },
   {
     id: "e33d47ba-b584-4a5c-afb8-9274b52a9274",
@@ -203,6 +214,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
+    rating: 3.5
   },
   {
     id: "f847fab9-b3d9-4df1-a0bf-d8acc2a8b443",
@@ -219,6 +231,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
+    rating: 12.5
   },
   {
     id: "f847fab9-b3d9-4df1-a0bf-d8acc2a8b443",
@@ -235,6 +248,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
+    rating: 9.5
   },
   {
     id: "1281939d-784f-4386-b822-f534045b7fea",
@@ -251,22 +265,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
-  },
-  {
-    id: "1281939d-784f-4386-b822-f534045b7fea",
-    sku: "oscar_piastri",
-    name: "Oscar Piastri",
-    description: `oscar_piastri`,
-    price: 10000,
-    image:
-      "",
-    images: [
-      "",
-    ],
-    sizes: ["s", "l"],
-    categories: [],
-    colors: [],
-    currency: "INR",
+    rating: 8.5
   },
   {
     id: "a8ad93ae-159d-4fca-8501-2f0aff18e80b",
@@ -283,6 +282,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
+    rating: 5.5
   },
   {
     id: "ac984a28-1122-4704-8121-1da5fc3c870c",
@@ -299,6 +299,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
+    rating: 5.5
   },
   {
     id: "ac984a28-1122-4704-8121-1da5fc3c870c",
@@ -315,6 +316,7 @@ export const inventory: InventoryProduct[] = [
     categories: [],
     colors: [],
     currency: "INR",
+    rating: 3.5
   },
 
   

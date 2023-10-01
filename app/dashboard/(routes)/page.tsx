@@ -14,13 +14,15 @@ import { AlertDialogDemo } from "@/app/HowToPlay/page"
 import { useRouter } from "next/navigation"
 import  Layout  from "@/app/dashboard/layout"
 import { SiteHeader } from "@/components/site-header"
+import { clerkClient, auth } from "@clerk/nextjs"
+import { redirect } from "next/navigation"
+
 
 
 
 
 interface Props {
-  params: {userId: string, users: string
-  }
+ 
 
   searchParams: {
     date?: string
@@ -29,17 +31,23 @@ interface Props {
     category?: string
     size?: string
     search?: string
+    rating?: string
   }
 }
 
 
-export default async function Page({ searchParams, params }: Props) {
-  const user = await currentUser()
-  const users = params.users
-  const userId = params.userId
+export default async function Page({ searchParams}: Props) {
+  const { userId } = auth();
+  if (!userId) {
+    redirect("/");
+  }
+  const user = await clerkClient.users.getUser(userId);
 
 
-  const {date = "desc", price, color, category, size, search} = searchParams
+
+
+
+  const {date = "desc", price, color, category, size, search, rating} = searchParams
   const priceOrder = price ? `| order(price ${price})` : ""
   const dateOrder = date ? `| order(_createdAt ${date})` : ""
   const order = `${priceOrder}${dateOrder}`
@@ -60,8 +68,9 @@ export default async function Page({ searchParams, params }: Props) {
     images,
     currency,
     price,
+    rating,
     description,
-    "slug": slug.current
+    "slug": slug.current,
     }`
   )
   console.log(products)
@@ -75,7 +84,7 @@ export default async function Page({ searchParams, params }: Props) {
         <h1 className="text-4xl font-extrabold tracking-normal">{siteConfig.name}</h1>
         <p className="mx-auto mt-4 max-w-3xl text-base">{siteConfig.description}</p>
       </div>
-      <div className="text-center text-4xl font-extrabold tracking-normal">Hello {user?.firstName}</div>
+      <div className="text-center text-4xl font-extrabold tracking-normal">Hello {user.firstName}</div>
       <div className="flex justify-center mt-7"><AlertDialogDemo/></div>
       <div>
         <main className="mx-auto max-w-6xl px-6">

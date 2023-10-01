@@ -11,6 +11,7 @@ import { SiteHeader } from "@/components/site-header"
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs/app-beta"
 import { SignInButton, useAuth } from "@clerk/nextjs"
 import { currentUser } from "@clerk/nextjs"
+import { useSession } from "@clerk/nextjs"
 
 
 
@@ -21,7 +22,6 @@ interface RootLayoutProps {
 
 
 export default async function RootLayout({children }: RootLayoutProps) {
-  const user = await currentUser()
 
 
   return (
@@ -41,7 +41,7 @@ export default async function RootLayout({children }: RootLayoutProps) {
           <SignedIn>
           <Providers>
           <div className="relative flex min-h-screen flex-col">
-            <SiteHeader   />
+            <SiteHeader  />
             <SiteBlob />
             <div className="flex-1">{children}</div>
             <SiteFooter />
